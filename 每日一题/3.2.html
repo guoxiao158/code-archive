@@ -1,0 +1,99 @@
+<!--
+分页器 很常见把
+几乎是网站的标配，而分页器的html结构也非常简单
+
+<ul class=”pagercontrol”>
+    <li class=”prev”>首页</li>
+    <li class=”prev”>上一页</li>
+    <li class=”pageitem”>1</li>
+    <li class=”pageitem”>2</li>
+    <li class=”pageitem sele”>3</li>
+    <li class=”pageitem”>4</li>
+    <li class=”pageitem”>5</li>
+    <li class=”pageitem”>6</li>
+    <li class=”next”>下一页</li>
+    <li class=”next”>末页</li>
+</ul>
+
+现在需要写一个函数 函数的定义如下：
+函数名：
+Createpagercontrol
+基本参数：（至少要有这些）
+Domid
+Totalpagecount
+Currentpagenum
+Showprevnext
+Showfirstlast
+Pageitemscount
+ClickCallback(pagenum)
+
+注释：javascript中 函数 和参数的首字母都是小写，word自动改成的大写
+
+
+分页器的分页规则有很多比如pageitemcount=10的一个分页器如下
+
+Case1 :
+1 2 3 4 5 6 7 8  9  10  click 9
+3 4 5 6 7 8 9 10 11 12  click 5
+2 3 4 5 6 7 8 9  10 11
+
+Case2:
+1 2 3 4 5 6 7 8 9 10  click 9
+1 2 3 4 5 6 7 8 9 10  click 10
+10 11 12 13 14 15 16 17 18 19
+
+还有很多中，自己查查看
+
+功能：
+在domid 的元素下 插入一段html代码 如下：
+<ul class=”pagercontrol”>
+    <li class=”prev”>首页</li>
+    <li class=”prev”>上一页</li>
+    <li class=”pageitem”>1</li>
+    <li class=”pageitem”>2</li>
+    <li class=”pageitem sele”>3</li>
+    <li class=”pageitem”>4</li>
+    <li class=”pageitem”>5</li>
+    <li class=”pageitem”>6</li>
+    <li class=”next”>下一页</li>
+    <li class=”next”>末页</li>
+</ul>
+
+当用户点击某个pageitem时，（js从远程异步获取数据，数据获取完成后），删除domid下的html，重新生成一个分页器。 比如点击 5
+<ul class=”pagercontrol”>
+    <li class=”prev”>首页</li>
+    <li class=”prev”>上一页</li>
+    <li class=”pageitem”>4</li>
+    <li class=”pageitem”>5</li>
+    <li class=”pageitem sele”>6</li>
+    <li class=”pageitem”>7</li>
+    <li class=”pageitem”>8</li>
+    <li class=”pageitem”>9</li>
+    <li class=”next”>下一页</li>
+    <li class=”next”>末页</li>
+</ul>
+
+-->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>pagination</title>
+</head>
+<body>
+<ul class=”pagercontrol”>
+    <li class=”prev”>首页</li>
+    <li class=”prev”>上一页</li>
+    <li class=”pageitem”>1</li>
+    <li class=”pageitem”>2</li>
+    <li class=”pageitem sele”>3</li>
+    <li class=”pageitem”>4</li>
+    <li class=”pageitem”>5</li>
+    <li class=”pageitem”>6</li>
+    <li class=”next”>下一页</li>
+    <li class=”next”>末页</li>
+</ul>
+
+
+</body>
+</html>
