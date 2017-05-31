@@ -1,0 +1,24 @@
+{
+  "name": "imovie",
+  "description": "nodejs movie",
+  "main": "app.js",
+  "authors": [
+    "zproo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "imovie"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
